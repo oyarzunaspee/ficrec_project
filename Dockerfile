@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y nodejs npm nginx && apt-get clean
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy backend and frontend
