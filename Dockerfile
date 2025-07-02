@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir -r backend/requirements.txt
 # Copy backend and frontend
 COPY backend backend
 COPY frontend frontend
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY nginx/nginx.conf /etc/nginx/conf.d/nginx.conf
 
 # Build frontend
 WORKDIR /app/frontend
